@@ -4,8 +4,9 @@
     Layout = "_Layout";
 }
 <h1>New Account Created</h1>
-<fieldset>
-    <form asp-action="ConfirmAccount">
+
+<form asp-action="ConfirmAccount">
+    <fieldset>
         <div>
             <label asp-for="FirstName"></label>
             <span>@Model.FirstName</span>
@@ -19,16 +20,13 @@
             <span>@Model.Program</span>
         </div>
         <div>
-            <label asp-for="EmailAddress">Username</label>
+            <label asp-for="EmailAddress"></label>
             <span>@Model.EmailAddress</span>
         </div>
         <div>
             <label asp-for="Password"></label>
             <span>@Model.Password</span>
         </div>
-        <div>
-            <input type="submit" value="Go to Login" />
-            <input type="button" value="Reset" />
-        </div>
-    </form>
-</fieldset>
+    </fieldset>
+</form>
+<a>Go to Login Page</a>

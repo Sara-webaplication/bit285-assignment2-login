@@ -2,6 +2,7 @@
 @model bit285_assignment2_login.Models.User
 @{
     Layout = "_Layout";
+    ViewBag.Title = "Confirm Account Info";
 }
 <h1>New Account Created</h1>
 
@@ -29,4 +30,6 @@
         </div>
     </fieldset>
 </form>
-<a>Go to Login Page</a>
+<a asp-controller="Login"
+   asp-action="Index"
+   asp-route-id="@Model.Id">Go to Login Page</a>

@@ -2,18 +2,19 @@
 @model bit285_assignment2_login.Models.User
 @{
     Layout = "_Layout";
-}
+    ViewBag.Title = "Account Info";
+ }
 <h1>New Account Information</h1>
 <fieldset>
     <form asp-action="AccountInfo">
         <div>
             <label asp-for="FirstName"></label>
-            <input asp-for="FirstName"/>
+            <input asp-for="FirstName" />
             <span asp-validation-for="FirstName"></span>
         </div>
         <div>
             <label asp-for="LastName"></label>
-            <input asp-for="LastName"/>
+            <input asp-for="LastName" />
             <span asp-validation-for="LastName"></span>
         </div>
         <div>
